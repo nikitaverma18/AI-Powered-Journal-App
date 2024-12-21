@@ -25,9 +25,9 @@ CORS setup for seamless communication between frontend and backend.
 
 //Deployment Links
 
-Frontend: https://ai-powered-journal-app-q93r.vercel.app/
+Frontend: https://ai-powered-journal-app-q93r-7vjyc4qto-nikita-vermas-projects.vercel.app/
 
-Backend: https://ai-powered-journal-app-4.onrender.com
+Backend: https://ai-powered-journal-app-5.onrender.com
 
 
 Project Structure:-

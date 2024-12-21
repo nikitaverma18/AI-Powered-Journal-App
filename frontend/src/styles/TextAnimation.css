@@ -1,15 +1,16 @@
+
 .animated-text {
-  font-size: 18px;
-  font-weight: 500;
-  color: #444;
-  animation: fadeIn 2s ease-in-out;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:rgb(222, 233, 20);
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.5s ease;
+  margin-top: 2px; 
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+@media (max-width: 1112px) {
+  .animated-text {
+    font-size: 1rem;
   }
 }

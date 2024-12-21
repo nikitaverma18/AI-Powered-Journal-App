@@ -1,6 +1,6 @@
 // src/components/EntryBox.js
 import React from 'react';
-import '../styles/EntryBox.css';
+// import '../styles/EntryBox.css';
 
 const EntryBox = ({ onAddEntry }) => {
   const handleAddClick = () => {

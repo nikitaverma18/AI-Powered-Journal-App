@@ -1,0 +1,66 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ div {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px;
+} 
+
+.add-entry-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    /* background-color: #ccc; */
+  }
+  
+  .add-entry-form textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-entry-form button {
+    width: 100%;
+    max-width: 100px;
+    padding: 10px;
+    font-size: 1 rem;
+    background-color: #b232cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-entry-form button:hover {
+    background-color: #4572a0;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .add-entry-form textarea {
+      max-width: 90%; 
+      height: 120px; 
+      font-size: 0.9rem;
+    }
+  
+    .add-entry-form button {
+      width: 90%; 
+      max-width: 180px; 
+      font-size: 0.5rem; 
+      padding: 6px; 
+    }
+  }
+  

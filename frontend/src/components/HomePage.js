@@ -10,7 +10,7 @@ const HomePage = ({ onAdd }) => {
  const navigate = useNavigate(); 
 
  const backgroundStyle = {
-  backgroundImage: 'url("/Emotion-bg.jpg")',
+  backgroundImage: 'url("/emotion-bg.jpg")',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',

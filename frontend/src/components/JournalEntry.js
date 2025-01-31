@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { FaEdit, FaTrash } from 'react-icons/fa'; 
 import '../styles/JournalEntry.css';
-
 
 const JournalEntry = ({ entry, onDelete, onEdit }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -16,30 +16,28 @@ const JournalEntry = ({ entry, onDelete, onEdit }) => {
   };
 
   return (
-    <div className="journal-entry">
+    <tr>
       {isEditing ? (
-        <div>
-          <textarea
-            value={newContent}
-            onChange={handleEditChange}
-            placeholder="Edit your entry..."
-          />
+        <td colSpan="4">
+          <textarea value={newContent} onChange={handleEditChange} placeholder="Edit your entry..." />
           <button onClick={handleSaveEdit}>Save</button>
-        </div>
+        </td>
       ) : (
-        <div>
-          <p>𝕮𝖔𝖓𝖙𝖊𝖓𝖙✍: {entry.content}</p>
-          <span className={`sentiment ${entry.sentiment.toLowerCase()}`}>
-          ✌𝓼𝓮𝓷𝓽𝓲𝓶𝓮𝓷𝓽✌:  {entry.sentiment}
-          </span>
-          <p className="timestamp">TIMESTAMP: {new Date(entry. timestamp).toLocaleString()}</p> {/* Display timestamp */}
-          <div className='journal-entry-buttons'>
-          <button onClick={() => setIsEditing(true)}>Edit</button>
-          <button onClick={() => onDelete(entry._id)}>Delete</button>
-          </div>
-        </div>
+        <>
+          <td>{entry.content}</td>
+          <td className={`sentiment ${entry.sentiment.toLowerCase()}`}>{entry.sentiment}</td>
+          <td>{new Date(entry.timestamp).toLocaleString()}</td>
+          <td>
+            <button onClick={() => setIsEditing(true)} className="icon-button">
+              <FaEdit />
+            </button>
+            <button onClick={() => onDelete(entry._id)} className="icon-button">
+              <FaTrash />
+            </button>
+          </td>
+        </>
       )}
-    </div>
+    </tr>
   );
 };
 

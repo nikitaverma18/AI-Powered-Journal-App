@@ -1,4 +1,3 @@
-// src/components/TextAnimation.js
 import React, { useEffect, useState } from 'react';
 import '../styles/TextAnimation.css';
 

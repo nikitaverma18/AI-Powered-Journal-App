@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import EntryList from './EntryList';
-// import '../styles/JournalPage.css';
+import '../styles/JournalPage.css';
 
 const JournalPage = ({ journals, onDelete, onEdit }) => {
   useEffect(() => {

@@ -15,7 +15,6 @@ const HomePage = ({ onAdd }) => {
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   height: '100vh',
-  // backgroundColor:'#ffc107',
 };
 
 

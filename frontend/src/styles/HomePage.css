@@ -1,16 +1,6 @@
 
-
- /* body{
-  background-image: url('C:\Users\NG\Samyarth-B\AI-Journal-App\frontend\public\AI-BG.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-}  */
-
 .header {
   text-align: center;
-  margin-top: 10px;
 }
 
 .heading {
@@ -24,24 +14,11 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-top: 5px;
-}
-h1 {
-  font-size: 2.5rem;
-  color: #afd41c;
-  text-align: center;
-  margin-top: 10px;
-}
-
-h2 {
-  font-size: 1.8rem;
-  color: #4d1dbe;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-top: -20px;
 }
 
 button {
-  background-color:rgb(76, 87, 175);
+  background-color:rgb(52, 5, 121);
   color: white;
   padding: 10px 15px;
   border: none;
@@ -54,13 +31,18 @@ button {
 }
 
 button:hover {
-  background-color:rgb(69, 122, 160);
+  background-color:rgb(88, 29, 171);
 }
 
+@media (max-width: 1366px){
+  .heading {
+    font-size: 1.5rem;
+  }
+}
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1rem;
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 1.5rem;
   }
 
   h2 {
@@ -68,6 +50,49 @@ button:hover {
   }
 
   button {
-    width: 100%;
+    width: 20%;
   }
 }
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1 rem;
+  }
+
+  button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 320px){
+  .heading{
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media (max-width: 480px){
+  .heading{
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button{
+    width: 40%;
+    height: 10%;
+  }
+
+}
+

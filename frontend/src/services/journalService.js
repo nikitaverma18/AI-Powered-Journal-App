@@ -1,7 +1,7 @@
 // src/services/journalService.js
 import axios from 'axios';
 
-const API_URL = 'https://ai-powered-journal-app-5.onrender.com/journals'; 
+const API_URL = 'https://ai-powered-journal-app-2.onrender.com'; 
 
 export const getJournals = async () => {
   try {

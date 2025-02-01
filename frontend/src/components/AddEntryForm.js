@@ -10,10 +10,12 @@ const AddEntryForm = ({ onAdd }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (content.trim()) {
-      onAdd(content); 
+        alert('please write something before adding an entry!');
+     return;
+    }
+    onAdd(content); 
       setContent('');
       navigate('/journal'); 
-    }
   };
 
   return (

@@ -9,7 +9,7 @@ const AddEntryForm = ({ onAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (content.trim()) {
+    if (!content.trim()) {
         alert('please write something before adding an entry!');
      return;
     }

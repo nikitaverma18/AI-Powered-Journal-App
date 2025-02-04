@@ -23,7 +23,7 @@ const AddEntryForm = ({ onAdd }) => {
       <textarea
         value={content}
         onChange={(e) => setContent(e.target.value)}
-        placeholder="Write your journal entry..."
+        placeholder="Write your thoughts and feelings..."
       />
       <button type="submit">Add Entry</button>
     </form>
